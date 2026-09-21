@@ -1,0 +1,61 @@
+/* ── SPRAY DAY ── */
+#spray-day {
+  padding-top: 140px;
+}
+
+/* ── VIDEO GRID ── */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.video-item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.video-item video {
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  border-radius: 16px;
+  background: #111;
+  display: block;
+  object-fit: cover;
+}
+
+.video-label {
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  opacity: 0.4;
+  max-width: none;
+}
+
+.nav-active {
+  opacity: 0.5;
+}
+
+@media (max-width: 600px) {
+  #spray-day {
+    padding-top: 100px;
+  }
+
+  .video-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .video-item video {
+    border-radius: 12px;
+  }
+}
+
+.event-playback { display: none; }
+@media (max-width: 600px) {
+  .event-playback:not([hidden]) { display: inline-flex; align-items: center; justify-content: center; align-self: flex-start; min-height: 44px; padding: 0 18px; border: 1px solid #ffffff40; border-radius: 999px; background: transparent; color: #fff; font: 400 11px var(--font); letter-spacing: .08em; cursor: pointer; }
+  .event-playback:focus-visible { outline: 2px solid white; outline-offset: 3px; }
+}

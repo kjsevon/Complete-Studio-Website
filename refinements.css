@@ -1,0 +1,71 @@
+/* Shared visual rhythm across the five pages. */
+:root { --content-width: 1040px; --page-gutter: clamp(24px, 5vw, 64px); }
+body { -webkit-font-smoothing: antialiased; }
+section { max-width: var(--content-width); padding: 104px var(--page-gutter); }
+.section-inner { gap: 22px; }
+.section-label { opacity: .65; font-size: 11px; letter-spacing: .22em; }
+p { letter-spacing: .025em; line-height: 1.8; opacity: .78; }
+h2, #shop-header h1, #community-header h1, .studio-title {
+  font-size: clamp(32px, 4.5vw, 54px); font-weight: 400;
+  letter-spacing: -.025em; line-height: 1.16; text-wrap: balance;
+}
+#studio-header, #shop-header, #community-header {
+  max-width: var(--content-width); padding: 156px var(--page-gutter) 56px;
+}
+#studio-header { display: flex; flex-direction: column; gap: 20px; }
+.studio-title { opacity: 1; max-width: 700px; }
+#hero { min-height: 560px; height: 100svh; }
+.hero-content { padding-inline: 24px; }
+.hero-content p { letter-spacing: .2em; text-wrap: balance; }
+#about { padding-block: clamp(88px, 12vw, 156px); }
+#about .mission { letter-spacing: .015em; line-height: 1.65; }
+#shop-home { border-top: 1px solid #ffffff1a; }
+.shop-tagline { font-size: clamp(23px, 3vw, 34px); letter-spacing: -.015em; opacity: .9; }
+#shop-products { max-width: var(--content-width); padding: 0 var(--page-gutter) 104px; }
+#spray-day { padding-top: 156px; }
+#spray-day .section-inner > p { max-width: 660px; }
+.video-grid { gap: 24px; margin-top: 24px; }
+.video-item { gap: 14px; min-width: 0; }
+.video-item video { border-radius: 18px; border: 1px solid #ffffff1a; }
+.video-label { opacity: .65; font-size: 10px; letter-spacing: .12em; line-height: 1.65; }
+#studio-strip { padding-left: max(var(--page-gutter), calc((100vw - 1040px) / 2 + var(--page-gutter))); gap: 20px; }
+.strip-item { width: clamp(280px, 38vw, 480px); height: auto; aspect-ratio: 7 / 5; border-radius: 18px; }
+#booking { max-width: var(--content-width); padding: 80px var(--page-gutter) 104px; }
+.booking-form { gap: 24px; margin-top: 20px; }
+.form-group label { opacity: .7; letter-spacing: .16em; }
+.form-group input, .form-group select, .form-group textarea {
+  background: #0b0b0b; border-color: #ffffff30; border-radius: 10px;
+  min-height: 50px; font-size: 16px; letter-spacing: .015em;
+}
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: #fff; }
+.form-group select { appearance: auto; -webkit-appearance: auto; }
+.btn { background: transparent; cursor: pointer; min-height: 48px; letter-spacing: .14em; }
+.btn:focus-visible { outline: 2px solid #fff; outline-offset: 5px; }
+#community-header { min-height: calc(100svh - 110px); padding-bottom: 104px; gap: 28px; }
+#community-header .mission { opacity: .78; text-align: left; margin: 0; font-size: clamp(17px, 2vw, 21px); max-width: 680px; letter-spacing: .015em; line-height: 1.8; }
+#community-header .btn { margin-top: 12px; }
+footer { opacity: 1; color: #888; padding: 36px 24px; letter-spacing: .14em; font-size: 10px; }
+@media (max-width: 600px) {
+  section { padding-block: 72px; }
+  #studio-header, #shop-header, #community-header { padding-top: 120px; padding-bottom: 40px; }
+  #spray-day { padding-top: 120px; }
+  #hero { min-height: 460px; }
+  #booking { padding-block: 64px 80px; }
+  .video-grid { gap: 36px; margin-top: 16px; }
+  .strip-item { width: 80vw; }
+  #community-header { padding-bottom: 72px; }
+  #shop-products { padding-bottom: 80px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  body::after { animation: none; }
+  .reveal, .reveal-up { opacity: 1; transform: none; transition: none; }
+}
+
+/* Keep the animated border inside the mobile scroll container. */
+#nav-pill::before { top: 0; bottom: 0; }
+.form-group input::placeholder, .form-group textarea::placeholder { color: #888; opacity: 1; }
+
+/* Menu selection uses gray only, including hover and active states. */
+#nav-pill a, #nav-pill a:hover, #nav-pill a:active, #nav-pill a[aria-current="page"] { text-decoration: none; }
+#nav-pill a[aria-current="page"] { color: #808080; opacity: 1; }

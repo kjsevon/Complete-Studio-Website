@@ -1,0 +1,72 @@
+{
+  "title": "Complete / 2027",
+  "scenes": [
+    {
+      "id": 0,
+      "image": "assets/01-approved-opening.jpg",
+      "name": "Infinity Long Sleeve",
+      "description": "A black long sleeve with oversized white infinity graphics down the arms."
+    },
+    {
+      "id": 1,
+      "image": "assets/02-black-tee.jpg",
+      "name": "Signature Tee",
+      "description": "A clean black silhouette, finished with the white Complete script."
+    },
+    {
+      "id": 2,
+      "image": "assets/03-white-long-sleeve.jpg",
+      "name": "Studio Long Sleeve",
+      "description": "White cotton, red Studio graphics, and a statement back print."
+    },
+    {
+      "id": 3,
+      "image": "assets/04-black-hoodie.jpg",
+      "name": "Signature Hoodie",
+      "description": "An easy black pullover with a kangaroo pocket and Complete embroidery."
+    },
+    {
+      "id": 4,
+      "image": "assets/05-canvas-tote.jpg",
+      "name": "Canvas Tote",
+      "description": "Black canvas, broad handles, and the Complete signature."
+    },
+    {
+      "id": 5,
+      "image": "assets/06-sketchbook-only.jpg",
+      "name": "Studio Sketchbook",
+      "description": "A black cloth cover, blank pages, and room for the next idea."
+    },
+    {
+      "id": 6,
+      "image": "assets/07-c-cap.jpg",
+      "name": "C Cap",
+      "description": "Black wool, a cream C appliqu\u00e9, and a green underbrim."
+    },
+    {
+      "id": 7,
+      "image": "assets/08-red-jacket.jpg",
+      "name": "Red Leather Jacket",
+      "description": "Tonal Complete lettering across embossed red leather."
+    },
+    {
+      "id": 8,
+      "image": "assets/09-infinity-duffel.jpg",
+      "name": "Infinity Duffel",
+      "description": "Black nylon with leather handles that trace the infinity form."
+    },
+    {
+      "id": 9,
+      "image": "assets/10-number-seven-jersey.jpg",
+      "name": "No. 7 Jersey",
+      "description": "Bold white binding, infinity side panels, and the number seven."
+    },
+    {
+      "id": 10,
+      "image": "assets/11-skate-ramp-finale-v2.jpg",
+      "name": "",
+      "description": ""
+    }
+  ],
+  "videos": []
+}

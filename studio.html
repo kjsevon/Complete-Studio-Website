@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Studio — Complete</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=homefade1" />
+  <link rel="stylesheet" href="studio.css" />
+  <script src="navigation.js" defer></script>
+  <link rel="stylesheet" href="refinements.css?v=undo1" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="nav-pill" aria-label="Main navigation">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-left nav-right" hidden>Menu</button>
+    <div class="nav-links nav-left" id="nav-left">
+      <a href="events.html">Events</a>
+      <a href="studio.html" class="nav-active" aria-current="page">Studio</a>
+    </div>
+    <a href="index.html" class="nav-logo" id="nav-logo">
+      <img src="logos/Complete_logo.svg" alt="Complete" />
+    </a>
+    <div class="nav-links nav-right" id="nav-right">
+      <a href="shop.html">Shop</a>
+      <a href="community.html">Community</a>
+    </div>
+  </nav>
+
+  <!-- STUDIO HEADER -->
+  <section id="studio-header">
+    <span class="section-label">The Studio · Downtown Los Angeles</span>
+    <h1 class="studio-title">Complete Studio</h1>
+  </section>
+
+  <!-- PHOTO STRIP -->
+  <div id="studio-strip">
+    <div class="strip-item"><img src="optimized/012A1100-960.jpg" srcset="optimized/012A1100-480.jpg 480w, optimized/012A1100-960.jpg 960w" sizes="(max-width: 600px) 80vw, 480px" alt="Complete Studio" loading="lazy" decoding="async" width="960" height="640" /></div>
+    <div class="strip-item"><img src="optimized/IMG_6816-960.jpg" srcset="optimized/IMG_6816-480.jpg 480w, optimized/IMG_6816-960.jpg 960w" sizes="(max-width: 600px) 80vw, 480px" alt="Complete Studio" loading="lazy" decoding="async" width="960" height="640" /></div>
+    <div class="strip-item"><img src="optimized/IMG_6822-960.jpg" srcset="optimized/IMG_6822-480.jpg 480w, optimized/IMG_6822-960.jpg 960w" sizes="(max-width: 600px) 80vw, 480px" alt="Complete Studio" loading="lazy" decoding="async" width="960" height="640" /></div>
+    <div class="strip-item"><img src="optimized/IMG_6828-960.jpg" srcset="optimized/IMG_6828-480.jpg 480w, optimized/IMG_6828-960.jpg 960w" sizes="(max-width: 600px) 80vw, 480px" alt="Complete Studio" loading="lazy" decoding="async" width="960" height="640" /></div>
+    <div class="strip-item"><img src="optimized/IMG_8448-960.jpg" srcset="optimized/IMG_8448-480.jpg 480w, optimized/IMG_8448-960.jpg 960w" sizes="(max-width: 600px) 80vw, 480px" alt="Complete Studio" loading="lazy" decoding="async" width="960" height="640" /></div>
+    <div class="strip-item"><img src="optimized/IMG_8781-960.jpg" srcset="optimized/IMG_8781-480.jpg 480w, optimized/IMG_8781-960.jpg 960w" sizes="(max-width: 600px) 80vw, 480px" alt="Complete Studio" loading="lazy" decoding="async" width="960" height="640" /></div>
+    <div class="strip-item"><img src="optimized/IMG_8783-960.jpg" srcset="optimized/IMG_8783-480.jpg 480w, optimized/IMG_8783-960.jpg 960w" sizes="(max-width: 600px) 80vw, 480px" alt="Complete Studio" loading="lazy" decoding="async" width="960" height="640" /></div>
+    <div class="strip-item"><img src="optimized/IMG_9101-960.jpg" srcset="optimized/IMG_9101-480.jpg 480w, optimized/IMG_9101-960.jpg 960w" sizes="(max-width: 600px) 80vw, 480px" alt="Complete Studio" loading="lazy" decoding="async" width="960" height="640" /></div>
+  </div>
+
+  <!-- BOOKING FORM -->
+  <section id="booking">
+    <div class="section-inner">
+      <span class="section-label">Book the Space</span>
+      <h2>Make something here.</h2>
+      <form class="booking-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="date">Preferred Date</label>
+            <input type="date" id="date" name="date" required />
+          </div>
+          <div class="form-group">
+            <label for="time">Preferred Time</label>
+            <input type="time" id="time" name="time" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="session">Session Type</label>
+          <select id="session" name="session" required>
+            <option value="" disabled selected>Select a session type</option>
+            <option value="photo-shoot">Photo Shoot</option>
+            <option value="video-shoot">Video Shoot</option>
+            <option value="recording">Recording Session</option>
+            <option value="event">Private Event</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell us about your project..."></textarea>
+        </div>
+        <button type="submit" class="btn">Send Request</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span>© 2026 Complete Studio. Los Angeles.</span>
+  </footer>
+
+  <script src="studio.js?v=nav2"></script>
+</body>
+</html>
