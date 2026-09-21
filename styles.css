@@ -287,16 +287,17 @@ p.mission {
   }
 }
 
-/* ── MOBILE NAV ── */
+/* Keep the desktop navigation visible on small screens. */
 @media (max-width: 760px) {
-  #nav-pill { top: 16px; width: calc(100% - 32px); padding: 0 16px; column-gap: 8px;
-    border-radius: 28px; max-height: calc(100dvh - 32px); overflow-y: auto; }
-  .nav-toggle { grid-column: 3; grid-row: 1; justify-self: end; }
-  #nav-pill .nav-links { grid-column: 1 / -1; justify-content: center; gap: 24px; padding: 4px 0; }
-  #nav-pill .nav-left { grid-row: 2; }
-  #nav-pill .nav-right { grid-row: 3; padding-bottom: 12px; }
-  #nav-pill .nav-links a { font-size: 14px; }
-  #nav-pill.nav-enhanced:not(.is-open) .nav-links { display: none; }
+  #nav-pill { top: 16px; width: calc(100% - 20px); max-width: 540px; padding: 0 10px; column-gap: 10px; border-radius: 28px; grid-template-columns: auto auto auto; }
+  .nav-links { gap: clamp(8px, 2.5vw, 20px); }
+  #nav-pill .nav-links a { font-size: 12px; letter-spacing: .015em; }
+  .nav-logo img { height: 23px; }
+}
+@media (max-width: 360px) {
+  #nav-pill { padding-inline: 7px; column-gap: 7px; }
+  .nav-links { gap: 7px; }
+  .nav-logo img { height: 18px; }
 }
 
 /* ── FOOTER ── */
